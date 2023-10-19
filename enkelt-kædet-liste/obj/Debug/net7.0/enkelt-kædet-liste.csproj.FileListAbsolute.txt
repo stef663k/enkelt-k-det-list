@@ -1,0 +1,15 @@
+C:\Users\rumbo\skole\h3\enkelt kædet list\enkelt-kædet-liste\obj\Debug\net7.0\enkelt-kædet-liste.csproj.AssemblyReference.cache
+C:\Users\rumbo\skole\h3\enkelt kædet list\enkelt-kædet-liste\obj\Debug\net7.0\enkelt-kædet-liste.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rumbo\skole\h3\enkelt kædet list\enkelt-kædet-liste\obj\Debug\net7.0\enkelt-kædet-liste.AssemblyInfoInputs.cache
+C:\Users\rumbo\skole\h3\enkelt kædet list\enkelt-kædet-liste\obj\Debug\net7.0\enkelt-kædet-liste.AssemblyInfo.cs
+C:\Users\rumbo\skole\h3\enkelt kædet list\enkelt-kædet-liste\obj\Debug\net7.0\enkelt-kædet-liste.csproj.CoreCompileInputs.cache
+C:\Users\rumbo\skole\h3\enkelt kædet list\enkelt-kædet-liste\bin\Debug\net7.0\enkelt-kædet-liste.exe
+C:\Users\rumbo\skole\h3\enkelt kædet list\enkelt-kædet-liste\bin\Debug\net7.0\enkelt-kædet-liste.deps.json
+C:\Users\rumbo\skole\h3\enkelt kædet list\enkelt-kædet-liste\bin\Debug\net7.0\enkelt-kædet-liste.runtimeconfig.json
+C:\Users\rumbo\skole\h3\enkelt kædet list\enkelt-kædet-liste\bin\Debug\net7.0\enkelt-kædet-liste.dll
+C:\Users\rumbo\skole\h3\enkelt kædet list\enkelt-kædet-liste\bin\Debug\net7.0\enkelt-kædet-liste.pdb
+C:\Users\rumbo\skole\h3\enkelt kædet list\enkelt-kædet-liste\obj\Debug\net7.0\enkelt-kædet-liste.dll
+C:\Users\rumbo\skole\h3\enkelt kædet list\enkelt-kædet-liste\obj\Debug\net7.0\refint\enkelt-kædet-liste.dll
+C:\Users\rumbo\skole\h3\enkelt kædet list\enkelt-kædet-liste\obj\Debug\net7.0\enkelt-kædet-liste.pdb
+C:\Users\rumbo\skole\h3\enkelt kædet list\enkelt-kædet-liste\obj\Debug\net7.0\enkelt-kædet-liste.genruntimeconfig.cache
+C:\Users\rumbo\skole\h3\enkelt kædet list\enkelt-kædet-liste\obj\Debug\net7.0\ref\enkelt-kædet-liste.dll
