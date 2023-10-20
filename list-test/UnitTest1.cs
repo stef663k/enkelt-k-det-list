@@ -68,4 +68,25 @@ public class UnitTest1
         list.Add_first(assertStetmentSix);
         Assert.Equal(expectedstring, list.Sort());
     }
+    [Fact]
+    public void RemoveElementAtCheck()
+    {
+        int assertStetment = 2;
+        int assertStetmentTwo = 6;
+        int assertStetmentThree = 4;
+        int assertStetmentFour = 1;
+        int assertStetmentFive = 5;
+        int assertStetmentSix = 3;
+        int removeat = 3;
+        string expectedstring = "6, 5, 4, 3, 2";
+        OurLinkedList list = new OurLinkedList();
+        list.Add_first(assertStetment);
+        list.Add_first(assertStetmentTwo);
+        list.Add_first(assertStetmentThree);
+        list.Add_first(assertStetmentFour);
+        list.Add_first(assertStetmentFive);
+        list.Add_first(assertStetmentSix);
+        list.RemoveElementAt(removeat);
+        Assert.Equal(expectedstring, list.Sort());
+    }
 }

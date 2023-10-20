@@ -3,37 +3,8 @@ namespace enkelt_kædet_liste
     public class OurLinkedList
     {
         // First element som variabel 
-        // NextElementInList Metode som returnerer næste element eller null hvis den er det sidste.
-
-        //Create new element. and is first =null? If yes then add element, if no. 
-        //Use Next element till nextelement.next is null then set nextelement.next = new element
-
-        //Add_first(data) metode (13 min) AddCheck før og efter, bekræftet.
-        //checker om der er en first, hvis ikke så sætter first til at være et nye element.
-        //Hvis der er en first så skabber vi det ney element og sætter LinkedList.first = ney element og
-        //det ney element,next = gamle.data. 
-
-
-
-
-        //print() metode PrintCheck (5 min) til at printe listen ud.
-        //lave et while loop der skriver data ud så længe next ikke er null
-        //sort() metode SortedListCheck (13-60 min) Give den en liste, køre sort metoden, og derefter tjekke at listen er sorteret korrekt 
-        //While(Sequential =false){
-        //sequential = true;
-        //(for x=0; x<linkedlist.count()-1;x++){
-        //if (list[x] > list[x+1]){
-        //a=list[x];
-        //b=list[x+1];
-        //c=a;
-        //b=a;
-        //a=c;
-        //sequential = false;
-        //}
-        //}
-        //}
-        public Element first { get; set; }
-
+        private Element first { get; set; }
+        //get the first element in our linked list
         public Element? GetElement()
         {
             return first;
@@ -41,6 +12,10 @@ namespace enkelt_kædet_liste
 
         public void Add_first(int value)
         {
+            //Add_first(data) metode (13 min) AddCheck før og efter, bekræftet.
+            //checker om der er en first, hvis ikke så sætter first til at være et nye element.
+            //Hvis der er en first så skabber vi det ney element og sætter LinkedList.first = ney element og
+            //det ney element,next = gamle.data. 
             if (first == null)
             {
                 first = new Element(value, null);
@@ -60,7 +35,6 @@ namespace enkelt_kædet_liste
             if (first != null && first.next != null)
             {
                 first = first.next;
-                /* first.next = null; */
             }
 
 
@@ -82,6 +56,8 @@ namespace enkelt_kædet_liste
         }
         public string Print()
         {
+            //print() metode PrintCheck (5 min) til at printe listen ud.
+            //lave et while loop der skriver data ud så længe next ikke er null
             string returnstring = "";
             Element currentElement = first;
             while (currentElement != null)
@@ -101,6 +77,20 @@ namespace enkelt_kædet_liste
 
         public string Sort()
         {
+            //sort() metode SortedListCheck (13-60 min) Give den en liste, køre sort metoden, og derefter tjekke at listen er sorteret korrekt 
+            //While(Sequential =false){
+            //sequential = true;
+            //(for x=0; x<linkedlist.count()-1;x++){
+            //if (list[x] > list[x+1]){
+            //a=list[x];
+            //b=list[x+1];
+            //c=a;
+            //b=a;
+            //a=c;
+            //sequential = false;
+            //}
+            //}
+            //}
             string returnstring = "";
             Element currentElement = first;
             bool sorted = false;
@@ -135,6 +125,24 @@ namespace enkelt_kædet_liste
                 currentElement = currentElement.next;
             }
             return returnstring;
+        }
+        public void RemoveElementAt(int removeIndex)
+        {
+            Element currentElement = first;
+            int count = 1;
+            while (currentElement != null)
+            {
+                if (count == removeIndex - 1)
+                {
+                    currentElement.next = currentElement.next.next;
+                    break;
+                }
+                else
+                {
+                    currentElement = currentElement.next;
+                    count++;
+                }
+            }
         }
     }
 }
