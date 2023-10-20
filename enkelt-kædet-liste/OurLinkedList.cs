@@ -144,5 +144,24 @@ namespace enkelt_kædet_liste
                 }
             }
         }
+
+        public int? IndexOf(int value)
+        {
+            Element currentElement = first;
+            int count = 1;
+            while (currentElement.next != null)
+            {
+                if (currentElement.data == value)
+                {
+                    return count;
+                }
+                else
+                {
+                    currentElement = currentElement.next;
+                    count++;
+                }
+            }
+            return null;
+        }
     }
 }
