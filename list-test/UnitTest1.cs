@@ -1,7 +1,13 @@
 using enkelt_kædet_liste;
 
 namespace list_test;
-
+//Jeres test er unødvendig lange
+//I stedet kunne have lavet dem såden her 
+// [Fact]
+// public void testtest(){
+//     List.Add_first(1);
+//     Assert.Equal("1", List.Count());
+//}
 public class UnitTest1
 {
     [Fact]
@@ -20,6 +26,17 @@ public class UnitTest1
         OurLinkedList list = new OurLinkedList();
         list.Add_first(assertStetment);
         list.Add_first(assertStetmentTwo);
+        list.RemoveFirst();
+        Assert.Equal(assertStetment, list.GetElement().data);
+    }
+    //Gruppe 6 comment:
+    //Denne kan umuligt gå ind og fjerne element i jeres if statement
+    [Fact]
+    public void RemoveFirstChecTwo()
+    {
+        int assertStetment = 1;
+        OurLinkedList list = new OurLinkedList();
+        list.Add_first(assertStetment);
         list.RemoveFirst();
         Assert.Equal(assertStetment, list.GetElement().data);
     }

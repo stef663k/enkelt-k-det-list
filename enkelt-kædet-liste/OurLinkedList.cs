@@ -16,6 +16,10 @@ namespace enkelt_kædet_liste
             //checker om der er en first, hvis ikke så sætter first til at være et nye element.
             //Hvis der er en first så skabber vi det ney element og sætter LinkedList.first = ney element og
             //det ney element,next = gamle.data. 
+            //Hvor ikke lave et 
+
+            //Gruppe 6 comment:
+            //Hvorfor dette null check? er den ikke irelevant?
             if (first == null)
             {
                 first = new Element(value, null);
@@ -32,6 +36,11 @@ namespace enkelt_kædet_liste
             //removeFirst(data) metode (5-8 min)  removeFirstCheck Elementet før og efter, bekræftet.
             //tag first.next og gem dataen i en variabel og sæt first.next = null, 
             //tag derefter linkedlist.first = element hvor data = variabel
+
+            //Gruppe 6 comment:
+            //Hvorfor checke for next i dette scenerie? 
+            //dette ville lave en fejl 
+            //hvis der kun er et element i listen.
             if (first != null && first.next != null)
             {
                 first = first.next;
@@ -44,6 +53,9 @@ namespace enkelt_kædet_liste
             //count() metode Countcheck (8 min) til at returnere antallet af elementer i listen
             //lave en counter variabel og sæt den til 0, og lave et while loop der kører så længe next ikke er null,
             //tag next og counter ++ indtil next er null, og returner counter
+
+            //Gruppe 6 comment:
+            //Super!
             int count = 0;
             Element currentElement = first;
             while (currentElement != null)
@@ -58,6 +70,9 @@ namespace enkelt_kædet_liste
         {
             //print() metode PrintCheck (5 min) til at printe listen ud.
             //lave et while loop der skriver data ud så længe next ikke er null
+
+            //Gruppe 6 comment:
+            //Super!
             string returnstring = "";
             Element currentElement = first;
             while (currentElement != null)
@@ -111,6 +126,9 @@ namespace enkelt_kædet_liste
                     currentElement = currentElement.next;
                 }
             }
+
+            //Gruppe 6 comment:
+            //Hvorfor en ny print methode?
             currentElement = first;
             while (currentElement != null)
             {
@@ -126,6 +144,8 @@ namespace enkelt_kædet_liste
             }
             return returnstring;
         }
+            //Gruppe 6 comment:
+            //Super!
         public void RemoveElementAt(int removeIndex)
         {
             Element currentElement = first;
@@ -144,7 +164,8 @@ namespace enkelt_kædet_liste
                 }
             }
         }
-
+        //Gruppe 6 comment:
+        //Hvorfor else statement?
         public int? IndexOf(int value)
         {
             Element currentElement = first;
@@ -163,7 +184,8 @@ namespace enkelt_kædet_liste
             }
             return null;
         }
-
+        //Gruppe 6 comment:
+        //count=1? Hvor i alverden ikke starte den på 0? kan da kun give unødvendige problemer.
         public void Add_At(int value, int indexof)
         {
             Element currentElement = first;
