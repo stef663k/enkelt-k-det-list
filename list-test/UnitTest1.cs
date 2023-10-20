@@ -109,4 +109,21 @@ public class UnitTest1
         Assert.Equal(expectedIndex, list.IndexOf(1));
     }
 
+    [Fact]
+    public void AddAtCheck()
+    {
+        int assertStetment = 12;
+        int assertStetmentTwo = 15;
+        int assertStetmentThree = 33;
+        int assertStetmentFour = 11;
+        string expectedstring = "33, 15, 11, 12";
+        OurLinkedList list = new OurLinkedList();
+        list.Add_first(assertStetment);
+        list.Add_first(assertStetmentTwo);
+        list.Add_first(assertStetmentThree);
+        list.Add_At(assertStetmentFour, 3);
+        Assert.Equal(expectedstring, list.Print());
+    }
+
+
 }

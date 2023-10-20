@@ -163,5 +163,26 @@ namespace enkelt_kædet_liste
             }
             return null;
         }
+
+        public void Add_At(int value, int indexof)
+        {
+            Element currentElement = first;
+            int count = 1;
+            while (currentElement != null)
+            {
+                if (count == indexof - 1)
+                {
+                    Element newElement = new Element(value, null);
+                    newElement.next = currentElement.next;
+                    currentElement.next = newElement;
+                    break;
+                }
+                else
+                {
+                    currentElement = currentElement.next;
+                    count++;
+                }
+            }
+        }
     }
 }
