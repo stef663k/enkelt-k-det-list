@@ -15,9 +15,7 @@ namespace enkelt_kædet_liste
 
 
 
-        //count() metode Countcheck (8 min) til at returnere antallet af elementer i listen
-        //lave en counter variabel og sæt den til 0, og lave et while loop der kører så længe next ikke er null,
-        //tag next og counter ++ indtil next er null, og returner counter
+
         //print() metode PrintCheck (5 min) til at printe listen ud.
         //lave et while loop der skriver data ud så længe next ikke er null
         //sort() metode SortedListCheck (13-60 min) Give den en liste, køre sort metoden, og derefter tjekke at listen er sorteret korrekt 
@@ -67,9 +65,76 @@ namespace enkelt_kædet_liste
 
 
         }
-        public void Count() { }
-        public void Print() { }
+        public int Count()
+        {
+            //count() metode Countcheck (8 min) til at returnere antallet af elementer i listen
+            //lave en counter variabel og sæt den til 0, og lave et while loop der kører så længe next ikke er null,
+            //tag next og counter ++ indtil next er null, og returner counter
+            int count = 0;
+            Element currentElement = first;
+            while (currentElement != null)
+            {
+                currentElement = currentElement.next;
+                count++;
+            }
+            return count;
 
-        public void Sort() { }
+        }
+        public string Print()
+        {
+            string returnstring = "";
+            Element currentElement = first;
+            while (currentElement != null)
+            {
+                if (returnstring == "")
+                {
+                    returnstring += currentElement.data;
+                }
+                else
+                {
+                    returnstring += ", " + currentElement.data;
+                }
+                currentElement = currentElement.next;
+            }
+            return returnstring;
+        }
+
+        public string Sort()
+        {
+            string returnstring = "";
+            Element currentElement = first;
+            bool sorted = false;
+
+            while (sorted == false)
+            {
+                sorted = true;
+                currentElement = first;
+                while (currentElement.next != null)
+                {
+                    if (currentElement.data < currentElement.next.data)
+                    {
+                        int tempholder = currentElement.data;
+                        currentElement.data = currentElement.next.data;
+                        currentElement.next.data = tempholder;
+                        sorted = false;
+                    }
+                    currentElement = currentElement.next;
+                }
+            }
+            currentElement = first;
+            while (currentElement != null)
+            {
+                if (returnstring == "")
+                {
+                    returnstring += currentElement.data;
+                }
+                else
+                {
+                    returnstring += ", " + currentElement.data;
+                }
+                currentElement = currentElement.next;
+            }
+            return returnstring;
+        }
     }
 }
